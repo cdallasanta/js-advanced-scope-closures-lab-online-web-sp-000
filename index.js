@@ -17,3 +17,12 @@ function produceTipCalculator(tip) {
     return fare * tip;
   };
 };
+
+function createDriver() {
+  let driverId = 0;
+  return class {
+    constructor (){
+      this.id = ++driverId;
+    };
+  };
+};
