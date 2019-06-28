@@ -5,9 +5,9 @@ function produceDrivingRange(range) {
     const distance = Math.abs(startNum - endNum);
 
     if (distance > range) {
-      return ""
+      return ``
     } else {
-      return ""
+      return `within range by ${range-distance}`
     }
   }
 }
